@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Page</title>
+    <style>
+        body {
+            background: linear-gradient(160deg, #1056aa, #229bc8, #229bc8);
+            display: flex;
+            justify-content: center;
+        }
+
+        video {
+            border-radius: 28px;
+            width: 80%;
+            height: auto;
+            margin: 0px auto;
+        }
+
+        @media screen and (max-width: 900px) {
+            body{
+                height: 100vh;
+
+            }
+
+            video {
+                margin-top: 30vh;
+                border-radius: 30px;
+                width: 100%;
+                height: fit-content;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video src="/100 DAYS Challenge.mp4" autoplay loop ></video>
+
+    <script>
+        // Set the playback speed to 2x
+        const video = document.getElementById('video');
+        video.playbackRate = 2.0;
+    </script>
+</body>
+</html>
